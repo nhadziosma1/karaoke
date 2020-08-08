@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!--
+kada se nesto prosljedjuje kao parametar u scenu, onda se fxml file ne povezuje preko "fx:controller" atributa,
+vec se on postavlja manuelno prilikom pokretanja scene
+fx:controller="fxml.StartScreenController"-->
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Accordion layoutX="162.0" layoutY="68.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="150.0" prefWidth="321.0" text="Log in">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="tfUsernameLogIn" layoutX="134.0" layoutY="72.0" AnchorPane.leftAnchor="134.0" />
+                        <TextField fx:id="tfPasswordLogIn" layoutX="144.0" layoutY="32.0" AnchorPane.leftAnchor="134.0" />
+                        <Label fx:id="laUsernameLogIn" layoutX="58.0" layoutY="36.0" text="Username" />
+                        <Label fx:id="laPasswordLogIn" layoutX="58.0" layoutY="72.0" text="Password" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="180.0" prefWidth="320.0" text="Sign in">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="laCountrySignIn" layoutX="53.0" layoutY="106.0" text="Country" />
+                        <ChoiceBox fx:id="cbCountrySignIn" layoutX="119.0" layoutY="102.0" prefWidth="150.0" />
+                        <Label fx:id="laUsernameSignIn" layoutX="51.0" layoutY="27.0" text="Username" />
+                        <TextField fx:id="tfUsernameSignIn" layoutX="119.0" layoutY="23.0" />
+                        <Label fx:id="laPasswordSignIn" layoutX="53.0" layoutY="66.0" text="Password" />
+                        <TextField fx:id="tfPasswordSignIn" layoutX="119.0" layoutY="62.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
