@@ -71,4 +71,10 @@ public class Country
         this.countryAbbreviation3Letters = countryAbbreviation3Letters;
     }
 
+    //METHODS
+    @Override
+    public String toString()
+    {
+        return countryName ;
+    }
 }

@@ -1,37 +1,48 @@
 package controller;
 
+import databse.CountryDao;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.Initializable;
 
-import java.awt.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import databse.BazaDao;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import model.Country;
 
 
-public class StartScreenController implements Initializable
-{
-    private BazaDao bazaDao;
+public class StartScreenController implements Initializable {
+    private CountryDao countryDao;
 
     public TextField tfUsernamLeogIn;
     public TextField tfPasswordLogIn;
     public TextField tfUsernameSignIn;
     public TextField tfPasswordSignIn;
-    public ChoiceBox cbCountrySignIn;
+    public ChoiceBox<Country> cbCountrySignIn;
 
-    public StartScreenController(BazaDao bazaDao)
-    {
-        this.bazaDao = bazaDao;
+    public StartScreenController(CountryDao countryDao) {
+        this.countryDao = countryDao;
     }
+
     /*
     pokrece se odmah pri kreiranju
     ovi parametri metode moraju postojati, jer je obavezno preklopiti ovu metodu kada implementiramo "Initializable"
     */
     @Override
-    public void initialize(URL location, ResourceBundle resources)
-    {
-        //cbCountrySignIn.setItems(bazaDao.getAllCountries());
+    public void initialize(URL location, ResourceBundle resources) {
+        cbCountrySignIn.setItems(countryDao.getAllCountries());
+
+        cbCountrySignIn.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+
+            // if the item of the list is changed
+            public void changed(ObservableValue ov, Number value, Number new_value) {
+
+                // set the text for the label to the selected item
+                System.out.println(cbCountrySignIn.getItems().get(new Integer(new_value.toString())));
+            }
+        });
+
     }
 }

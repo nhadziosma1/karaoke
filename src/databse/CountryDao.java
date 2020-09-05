@@ -7,7 +7,7 @@ import model.Country;
 import java.io.File;
 import java.sql.*;
 
-public class BazaDao
+public class CountryDao
 {
     //ATTRIBUTES
     private PreparedStatement nadjiDrzavuPoIdu;
@@ -16,35 +16,22 @@ public class BazaDao
     private PreparedStatement nadjiDrzavuPoNazivu;
     private Statement nadjiSveDrzave;
 
-    private PreparedStatement nadjiKorisnikaPoUsername;
-
-
-    private static BazaDao instance = null;
-    private Connection conn;
+    private static CountryDao instance = null;
+    private DatabaseConnection datConn;
     //SINGLETONE
     private static void initialize()
     {
-        instance = new BazaDao();
+        instance = new CountryDao();
     }
 
-    private BazaDao()
+    private CountryDao()
     {
-        String url = "jdbc:sqlite:database.db";
-
-        File db = new File("database.db");
-        boolean doesDbExist = db.exists();
-
         try
         {
-            //Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection(url);
-
-            nadjiDrzavuPoIdu = conn.prepareStatement("SELECT * FROM drzava WHERE id = ?");
-            nadjiDrzavuPoSkracenici2 = conn.prepareStatement("SELECT * FROM drzava WHERE skracenica2 LIKE '?' ");
-            nadjiDrzavuPoSkracenici3 = conn.prepareStatement("SELECT * FROM drzava WHERE skracenica3 LIKE '?' ");
-            nadjiDrzavuPoNazivu = conn.prepareCall("SELECT * FROM drzava WHERE naziv_malim LIKE '?' OR naziv_velikim LIKE '?'");
-
-            nadjiKorisnikaPoUsername = conn.prepareStatement("SELECT * FROM korisnik WHERE username LIKE '?' ");
+            nadjiDrzavuPoIdu = datConn.getConnection().prepareStatement("SELECT * FROM drzava WHERE id = ?");
+            nadjiDrzavuPoSkracenici2 = datConn.getConnection().prepareStatement("SELECT * FROM drzava WHERE skracenica2 LIKE '?' ");
+            nadjiDrzavuPoSkracenici3 = datConn.getConnection().prepareStatement("SELECT * FROM drzava WHERE skracenica3 LIKE '?' ");
+            nadjiDrzavuPoNazivu = datConn.getConnection().prepareStatement("SELECT * FROM drzava WHERE naziv_malim LIKE '?' OR naziv_velikim LIKE '?'");
         }
         catch (SQLException e)
         {
@@ -53,7 +40,7 @@ public class BazaDao
 
     }
 
-    public static BazaDao getInstance()
+    public static CountryDao getInstance()
     {
         if(instance == null)
             initialize();
@@ -73,19 +60,20 @@ public class BazaDao
 
         try
         {
-            nadjiSveDrzave = conn.createStatement();
+            nadjiSveDrzave = datConn.getConnection().createStatement();
             String nadjiSveDrzaveS = new String("SELECT * FROM drzava");
             ResultSet rsDrzave = nadjiSveDrzave.executeQuery(nadjiSveDrzaveS);
 
             while(rsDrzave.next())
             {
-                Country country = new Country(rsDrzave.getString("naziv_malim"), rsDrzave.getString("skracenica2"),
-                        rsDrzave.getString("skracenica3"), rsDrzave.getInt("numcode"),
+                Country country = new Country(rsDrzave.getString("naziv_malim"),
+                        rsDrzave.getString("skracenica2"),
+                        rsDrzave.getString("skracenica3"),
+                        rsDrzave.getInt("numcode"),
                         rsDrzave.getInt("phonecode"));
 
                 obCountry.add(country);
             }
-
         }
         catch (SQLException e)
         {
@@ -95,7 +83,7 @@ public class BazaDao
         return obCountry;
     }
 
-    public Country getAcountryWith2LetterAbbervation(String skracenica2)
+    public Country getACountryWith2LetterAbbervation(String skracenica2)
     {
         Country country = null;
         try
@@ -116,7 +104,7 @@ public class BazaDao
         return country;
     }
 
-    public Country getAcountryWith3LetterAbbervation(String skracenica3)
+    public Country getACountryWith3LetterAbbervation(String skracenica3)
     {
         Country country = null;
         try
@@ -137,7 +125,7 @@ public class BazaDao
         return country;
     }
 
-    public Country dajDrzavuPoNazivu(String countryName)
+    public Country getACountryByName(String countryName)
     {
         Country country = null;
 
@@ -159,23 +147,5 @@ public class BazaDao
             e.printStackTrace();
         }
         return  country;
-    }
-
-    public boolean doesAUserWithUSernameExist(String username)
-    {
-        try
-        {
-            nadjiKorisnikaPoUsername.setString(1, username);
-            ResultSet rsKorisnik = nadjiKorisnikaPoUsername.executeQuery();
-
-            if(rsKorisnik.next()==true)
-                return true;
-        }
-        catch (SQLException e)
-        {
-            e.printStackTrace();
-        }
-
-        return false;
     }
 }

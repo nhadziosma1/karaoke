@@ -1,5 +1,5 @@
 import controller.StartScreenController;
-import databse.BazaDao;
+import databse.CountryDao;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,9 +18,9 @@ public class Main extends Application
         ResourceBundle bundle = ResourceBundle.getBundle("Translation");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/startScreen.fxml"), bundle);
 
-        BazaDao bazaDao = BazaDao.getInstance();
+        CountryDao countryDao = CountryDao.getInstance();
 
-        loader.setController(new StartScreenController(bazaDao));
+        loader.setController(new StartScreenController(countryDao));
         Parent root = loader.load();
         primaryStage.setTitle("");
         primaryStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
