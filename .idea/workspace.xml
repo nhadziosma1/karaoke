@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="976e629a-cddc-4883-bcc7-e964e259268a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/databse/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/databse/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_15.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database_init.db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karaoke.iml" beforeDir="false" afterPath="$PROJECT_DIR$/karaoke.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/karaoke/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/karaoke/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_init.db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database_init.db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/controller/StartScreenController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/karaoke/controller/StartScreenController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/karaoke/controller/StartScreenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/karaoke/controller/StartScreenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/karaoke/databse/BazaDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rsc/css/startScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/css/startScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/countrysFlags/png/republic-of-macedonia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/countrysFlags/png/republic-of-poland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/countrysFlags/png/republic-of-the-congo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/countrysFlags/png/st-barts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/countrysFlags/png/st-lucia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/countrysFlags/png/st-vincent-and-the-grenadines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/karaoke/fxml/startScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/karaoke/fxml/startScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsc/countrysFlags/png/republic-of-macedonia.png" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/countrysFlags/png/macedonia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsc/countrysFlags/png/republic-of-poland.png" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/countrysFlags/png/poland.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsc/countrysFlags/png/republic-of-the-congo.png" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/countrysFlags/png/congo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsc/countrysFlags/png/st-barts.png" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/countrysFlags/png/saint-barts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsc/countrysFlags/png/st-lucia.png" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/countrysFlags/png/saint-lucia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsc/countrysFlags/png/st-vincent-and-the-grenadines.png" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/countrysFlags/png/saint-vincent-and-the-grenadines.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rsc/fxml/startScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/rsc/fxml/startScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/StartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StartScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/databse/BazaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/databse/CountryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Country.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,27 +46,27 @@
           <entry key="css" value="242" />
           <entry key="db" value="6" />
           <entry key="dummy" value="23" />
-          <entry key="fxml" value="437" />
-          <entry key="java" value="4542" />
-          <entry key="sql" value="584" />
+          <entry key="fxml" value="446" />
+          <entry key="java" value="5031" />
+          <entry key="sql" value="766" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="242" />
-          <entry key="JAVA" value="4542" />
-          <entry key="OdpsQL" value="545" />
+          <entry key="JAVA" value="5031" />
+          <entry key="OdpsQL" value="727" />
           <entry key="PLAIN_TEXT" value="60" />
           <entry key="SQL" value="45" />
-          <entry key="XML" value="437" />
+          <entry key="XML" value="446" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="10" />
           <entry key="css" value="2" />
-          <entry key="db" value="1" />
+          <entry key="db" value="2" />
           <entry key="fxml" value="4" />
           <entry key="iml" value="1" />
           <entry key="java" value="19" />
@@ -71,7 +74,7 @@
           <entry key="kopijaBaze" value="1" />
           <entry key="png" value="1" />
           <entry key="properties" value="5" />
-          <entry key="sql" value="3" />
+          <entry key="sql" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -81,10 +84,10 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
           <entry key="JAVA" value="19" />
-          <entry key="OdpsQL" value="1" />
+          <entry key="OdpsQL" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="5" />
-          <entry key="SQL" value="3" />
+          <entry key="SQL" value="4" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -95,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="84">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,25 +110,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/StartScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="42" column="102" lean-forward="true" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
+            <state relative-caret-position="237">
+              <caret line="74" column="94" selection-start-line="74" selection-start-column="94" selection-end-line="74" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rsc/countrysFlags/png/bahrain.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rsc/css/startScreen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -159,27 +148,12 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rsc/fxml/startScreen.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rsc/photos/HalidBeslic.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database_init.db.sql">
-          <provider selected="true" editor-type-id="OdpsQlEditor">
-            <state relative-caret-position="177">
-              <caret line="278" column="58" lean-forward="true" selection-start-line="278" selection-start-column="58" selection-end-line="278" selection-end-column="58" />
-            </state>
-          </provider>
-          <provider editor-type-id="OdpsQlGraph" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -235,12 +209,12 @@
         <option value="$PROJECT_DIR$/src/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/database_init.sql" />
         <option value="$PROJECT_DIR$/src/databse/UserDao.java" />
-        <option value="$PROJECT_DIR$/database_init.db.sql" />
         <option value="$PROJECT_DIR$/src/databse/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/databse/CountryDao.java" />
         <option value="$PROJECT_DIR$/src/model/Country.java" />
         <option value="$PROJECT_DIR$/rsc/css/startScreen.css" />
         <option value="$PROJECT_DIR$/src/controller/StartScreenController.java" />
+        <option value="$PROJECT_DIR$/database_init.db.sql" />
         <option value="$PROJECT_DIR$/rsc/fxml/startScreen.fxml" />
       </list>
     </option>
@@ -281,13 +255,6 @@
               <item name="karaoke" type="462c0819:PsiDirectoryNode" />
               <item name="rsc" type="462c0819:PsiDirectoryNode" />
               <item name="countrysFlags" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="karaoke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="karaoke" type="462c0819:PsiDirectoryNode" />
-              <item name="rsc" type="462c0819:PsiDirectoryNode" />
-              <item name="countrysFlags" type="462c0819:PsiDirectoryNode" />
-              <item name="png" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="karaoke" type="b2602c69:ProjectViewProjectNode" />
@@ -341,7 +308,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599347871589" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599414111558" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/database.db" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -419,7 +386,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28139183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -498,6 +465,12 @@
           <line>44</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/StartScreenController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -660,9 +633,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Desktop/DatabaseConnection.java" />
-    <entry file="file://$PROJECT_DIR$/database.db">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.21.0.jar!/org/sqlite/jdbc3/JDBC3Connection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -692,10 +662,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="84">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsc/css/startScreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsc/countrysFlags/png/bahrain.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsc/photos/HalidBeslic.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Country.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2314#2315#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,10 +706,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/StartScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="74" column="94" selection-start-line="74" selection-start-column="94" selection-end-line="74" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database_init.db.sql">
       <provider selected="true" editor-type-id="OdpsQlEditor">
-        <state relative-caret-position="177">
-          <caret line="278" column="58" lean-forward="true" selection-start-line="278" selection-start-column="58" selection-end-line="278" selection-end-column="58" />
+        <state relative-caret-position="-2185">
+          <caret line="89" column="51" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
         </state>
       </provider>
       <provider editor-type-id="text-editor">
@@ -725,47 +732,13 @@
       </provider>
       <provider editor-type-id="OdpsQlGraph" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding>
-            <element signature="e#2279#2280#0" expanded="true" />
-            <element signature="e#2314#2315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsc/css/startScreen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsc/photos/HalidBeslic.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/StartScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="42" column="102" lean-forward="true" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsc/countrysFlags/png/bahrain.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/rsc/fxml/startScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">

@@ -10,6 +10,8 @@ import java.util.ResourceBundle;
 
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import model.Country;
 
 
@@ -20,6 +22,7 @@ public class StartScreenController implements Initializable {
     public TextField tfPasswordLogIn;
     public TextField tfUsernameSignIn;
     public TextField tfPasswordSignIn;
+    public ImageView imvIkonaDrzave;
     public ChoiceBox<Country> cbCountrySignIn;
 
     public StartScreenController(CountryDao countryDao) {
@@ -31,9 +34,11 @@ public class StartScreenController implements Initializable {
     ovi parametri metode moraju postojati, jer je obavezno preklopiti ovu metodu kada implementiramo "Initializable"
     */
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    public void initialize(URL location, ResourceBundle resources)
+    {
         cbCountrySignIn.setItems(countryDao.getAllCountries());
 
+        //LISTENER
         cbCountrySignIn.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
 
             // if the item of the list is changed
@@ -41,8 +46,33 @@ public class StartScreenController implements Initializable {
 
                 // set the text for the label to the selected item
                 System.out.println(cbCountrySignIn.getItems().get(new Integer(new_value.toString())));
+
+                Country currentlySelectedCountry = cbCountrySignIn.getItems().get(new Integer(new_value.toString()));
+
+                setCountriesIcon(currentlySelectedCountry);
+
             }
+
         });
 
+    }
+
+    private void setCountriesIcon(Country currentlySelectedCountry)
+    {
+        String countryNameInLowerCase = currentlySelectedCountry.toString().toLowerCase();
+
+        String partsOfCountyName[] = countryNameInLowerCase.split(" ");
+
+        String countryNameWithDashes = new String("");
+        for(int i = 0; i < partsOfCountyName.length; i++)
+        {
+            countryNameWithDashes += partsOfCountyName[i];
+
+            if(i+1 != partsOfCountyName.length)
+                countryNameWithDashes += "-";
+        }
+
+        imvIkonaDrzave.setImage(new Image("countrysFlags/png/"+countryNameWithDashes+".png"));
+        imvIkonaDrzave.setPreserveRatio(true);
     }
 }
